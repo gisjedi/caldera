@@ -1,0 +1,19 @@
+caldera:
+  build: ./docker/caldera
+  links:
+  - postgis:postgis
+postgis:
+  image: mdillon/postgis
+  env_file: docker/postgis/postgis.env
+  hostname: postgis
+  ports:
+  - "5432:5432"
+geoserver:
+  image: kartoza/geoserver
+  hostname: geoserver
+  ports:
+  - "8080:8080"
+  links:
+  - postgis:postgis
+  volumes:
+  - ./docker/geoserver:/opt/geoserver/data_dir

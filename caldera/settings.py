@@ -41,15 +41,13 @@ WSGI_APPLICATION = 'caldera.wsgi.application'
 # Database
 # https://docs.djangoproject.com/en/1.8/ref/settings/#databases
 
+db_server = os.environ.get('CALDERA_DB_SERVER')
+
 DATABASES = {
-    # 'default': {
-    #     'ENGINE': 'django.db.backends.sqlite3',
-    #     'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
-    # },
     'default': {
         'ENGINE': 'django.contrib.gis.db.backends.postgis',
         'NAME': 'caldera',
-        'HOST': 'localhost',
+        'HOST': db_server if db_server is not None else 'localhost',
         'USER': 'caldera',
         'PASSWORD': 'caldera'
     }
