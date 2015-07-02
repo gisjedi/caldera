@@ -7,9 +7,9 @@
     <id>WorkspaceInfoImpl-cbc6f86:14e4af6799e:-7fe6</id>
   </workspace>
   <connectionParameters>
-    <entry key="Connection timeout">20</entry>
     <entry key="port">5432</entry>
-    <entry key="passwd">crypt1:OJmqUBOWa3upmkzTG1Gi5w==</entry>
+    <entry key="Connection timeout">20</entry>
+    <entry key="passwd">crypt1:PhMv9uLljAh1yTc4xiFzIA==</entry>
     <entry key="dbtype">postgis</entry>
     <entry key="encode functions">false</entry>
     <entry key="namespace">http://boot2docker:8080/geoserver/caldera</entry>

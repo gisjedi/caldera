@@ -20,4 +20,4 @@ COPY . /opt/caldera/
 
 # Execute the 'erupt' command on container start with 1000 features being generated every 30 seconds
 WORKDIR /opt/caldera
-CMD ["sh", "docker-run.sh"]
+CMD ["sh", "docker/caldera/init-app.sh"]
