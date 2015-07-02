@@ -1,5 +1,5 @@
 caldera:
-  build: ./docker/caldera
+  build: .
   links:
   - postgis:postgis
 postgis:
